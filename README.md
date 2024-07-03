@@ -81,6 +81,31 @@ This code snippet is written in Python and uses several libraries (`cv2`, `panda
 
 This script is essentially for a traffic monitoring application, where it counts the number of cars, buses, and trucks passing a certain line in the video. It demonstrates the use of computer vision and machine learning for real-world applications such as traffic analysis and vehicle tracking.
 
+## How to Run the Script
+
+To run the script and start detecting vehicles in your video, follow these steps:
+
+### Step 1: Install Required Libraries
+
+First, you need to install the required Python libraries. This project includes a `requirements.txt` file that lists all the necessary packages. You can install them using pip by running the following command in your terminal:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2: Prepare Your Video File
+
+Ensure you have a video file named `tf.mp4` in the project's root directory. This video should be of the streets of Madrid or any other urban environment where you want to detect cars, buses, and trucks.
+
+### Step 3: Run the Main Script
+With the libraries installed and the video file in place, you can now run the main script. Open your terminal, navigate to the project's root directory, and execute the following command:
+
+```bash
+python main.py
+```
+
+This command will start the object detection process on the video file tf.mp4. Detected vehicles will be highlighted with bounding boxes, and their types (car, bus, or truck) will be annotated on the video output.
+
 # Project Overview
 
 This project is designed to leverage the power of YOLOv8 for object detection tasks, with a focus on vehicle detection. It is structured to support both evaluation of the model's performance and deployment of the model in a cloud environment. Below is a brief overview of the key components of this project:
