@@ -80,3 +80,23 @@ This code snippet is written in Python and uses several libraries (`cv2`, `panda
     - The video capture is released and all OpenCV windows are destroyed.
 
 This script is essentially for a traffic monitoring application, where it counts the number of cars, buses, and trucks passing a certain line in the video. It demonstrates the use of computer vision and machine learning for real-world applications such as traffic analysis and vehicle tracking.
+
+# Project Overview
+
+This project is designed to leverage the power of YOLOv8 for object detection tasks, with a focus on vehicle detection. It is structured to support both evaluation of the model's performance and deployment of the model in a cloud environment. Below is a brief overview of the key components of this project:
+
+
+## Evaluation Module
+
+The evaluation module is located in the `evaluation/` directory. It contains scripts and configurations for assessing the performance of the YOLOv8 model on a dataset. The key components include:
+
+- `evaluate.py`: This script uses the YOLOv8 model to perform validation on a specified dataset. It leverages the `ultralytics` library for model operations and `roboflow` for dataset management.
+- `data.yaml`: Configuration file specifying the dataset paths and classes for evaluation.
+- README files (`README.dataset.txt`, `README.roboflow.txt`): Provide additional information about the dataset and its source.
+
+## Cloud Deployment Module
+
+The cloud deployment module enables the model to be deployed as a service in a cloud environment, specifically designed for AWS SageMaker. The module is structured into two main directories:
+
+- `cloud_deploy/model/`: Contains the `inference.py` script which defines the model loading and inference operations for deployment. It also includes a `requirements.txt` file specifying the necessary Python packages.
+- `cloud_deploy/sagemaker_deploy/`: Contains the `deploy.py` script which handles the deployment of the model to AWS SageMaker, including setting up the endpoint for model inference.
