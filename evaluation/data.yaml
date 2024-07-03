@@ -1,0 +1,13 @@
+names:
+- car
+- truck
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: deep-ncu0q
+  url: https://universe.roboflow.com/ie-l0fg6/deep-ncu0q/dataset/1
+  version: 1
+  workspace: ie-l0fg6
+test: C:\Users\balta\OneDrive\Escritorio\yolov8\test
+train: C:\Users\balta\OneDrive\Escritorio\yolov8\train
+val: C:\Users\balta\OneDrive\Escritorio\yolov8\evaluation\valid
